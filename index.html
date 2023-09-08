@@ -7,7 +7,54 @@
     <title>Zahl Raten</title>
 </head>
 <body>
+    <!-- Start -->
+    <button>Start</button>
+    <hr>
+    <!-- Set Area start -->
+    <div id="setArea">
+        <button>0-10</button>
+        <button>0-100</button>
+        <button>0-1000</button>
+        <div id="setCustomArea">
+            Custom<br>
+            <input type="number">
+            <button>Confirm</button>
+        </div>
+    </div>
+    <!-- Set Area end -->
+    <hr>
+    <!-- Set Mode start -->
+    <div id="setMode">
+        <button>PvP</button> <!-- PvP === true; -->
+        <button>PvE</button> <!-- PvE === true; -->
+    </div>
+    <!-- Set Mode end -->
+    <hr>
+    <!-- Input start -->
+    <div id="PvP">
+        Player 1:<br>Input Guess
+        <input type="number"> <!-- Equal to set area -->
+    </div>
+    <div id="PvE">
+        Player:<br>Input Guess
+        <input type="number"> <!-- Equal to set area -->
+    </div>
+    <!-- Input end -->
+
+
 
     <script src="script.js"></script>
 </body>
 </html>
+
+
+<!-- 
+    Ideas
+
+    1. Define array for incorrect inputs
+    2. Add incorrect inputs from player to array
+    3. Create html list with amount of <li> equal to length of array
+    4. Display incorrect inputs by 
+        4.1 letting counter run for length of array + 1 (because of 0 index), as long as not 0
+        4.2 inserting array element into <ul> per execute
+-->
