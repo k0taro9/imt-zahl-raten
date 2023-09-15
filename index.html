@@ -24,30 +24,54 @@
             </div>
         </div>
         <!-- Set Area end -->
+
         <hr>
+
         <!-- Set Mode start -->
         <div id="setMode">
             <button>PvP</button> <!-- PvP === true; -->
             <button>PvE</button> <!-- PvE === true; -->
         </div>
         <!-- Set Mode end -->
+
         <hr>
+
         <!-- Input start -->
-        <div id="PvP_p1">
-            Player 1:<br>Input Number
-            <input type="number"> <!-- Equal to set area -->
-        </div>
-        <div id="PvP_p2">
-            Player 2:<br>Input Guess
-            <input type="number">
-        </div>
-        <div id="PvE">
-            Player:<br>Input Guess
-            <input type="number"> <!-- Equal to set area -->
-        </div>
+        <div id="input">
+            <div id="PvP_p1">
+                Player 1:<br>Input Number
+                <input type="number"> <!-- Equal to set area -->
+            </div>
+            <div id="PvP_p2">
+                Player 2:<br>Guess!
+                <input type="number">
+            </div>
+            <div id="PvE">
+                Player:<br>Guess!
+                <input type="number"> <!-- Equal to set area -->
+            </div>
+
+        </div>        
         <!-- Input end -->
 
-    
+        <hr>
+
+        <!-- Return start -->
+        <div id="return">
+            <div id="hit">
+                You Won!<br>Tries:<br>
+                <button>Play Again</button>
+            </div>
+            <div id="too_low">
+                Too Low!<br>
+                <button>Try Again</button>
+            </div>
+            <div id="too_high">
+                Too High!<br>
+                <button>Try Again</button>
+            </div>
+        </div>
+        <!-- Return end -->
     </div>
 
     <script src="script.js"></script>
@@ -68,4 +92,29 @@
 
     - <hr> temp. for "phases"
     - Let Player1 give hints in area
+    - End -> show amoutn of tries it took (array length)
+    - Try Again button OR press enter
+
+    Settings
+    - Double input warnings option
+
+    Google Fonts/Icons
+    - Tutorials:
+        - https://www.w3schools.com/icons/google_icons_intro.asp
+
+    - Icons:
+        - https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Aemoji_events%3AFILL%400%3Bwght%40400%3BGRAD%400%3Bopsz%4024
+-->
+
+
+
+<!--
+    NEXT
+    - Google Icons
+
+
+
+
+
+
 -->
