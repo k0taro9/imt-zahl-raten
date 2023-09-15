@@ -1,0 +1,29 @@
+#header {
+    display: none;
+}
+
+#setRange {
+    display: none;
+}
+
+#setMode {
+    display: none;
+}
+
+#input {
+    display: none;
+}
+
+#output {
+    display: none;
+}
+
+#back {
+    display: none;
+}
+
+#next {
+    display: none;
+}
+
+/*if all have same value group at end*/

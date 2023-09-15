@@ -10,22 +10,25 @@
 
     <div class="container">
         <!-- Start -->
-        <button>Start</button>
-        <hr>
-        <!-- Set Area start -->
-        <div id="setArea">
-            <button>0-10</button>
-            <button>0-100</button>
-            <button>0-1000</button>
-            <div id="setCustomArea">
-                Custom<br>
-                <input type="number">
-                <button>Confirm</button>
-            </div>
-        </div>
-        <!-- Set Area end -->
+        <button id="start">Start</button>
+        <h1 id="header">Header</h1>
 
-        <hr>
+        <!-- Set Range start -->
+        <div id="setRange">
+            <div id="suggestions">
+                Suggestions<br>
+                <button id="ten">0-10</button>
+                <button id="hundred">0-100</button>
+                <button id="thousand">0-1000</button>
+            </div>
+            <div id="customRange">
+                Custom<br>
+                <input type="number" placeholder="start" step="1" id="rangeStart" oninput="updateResult()">
+                <input type="number" placeholder="end" step="1" id="rangeEnd" oninput="updateResult()">
+            </div>
+            <div id="showRange">Range: undefined</div>
+        </div>
+        <!-- Set Range end -->
 
         <!-- Set Mode start -->
         <div id="setMode">
@@ -34,13 +37,11 @@
         </div>
         <!-- Set Mode end -->
 
-        <hr>
-
         <!-- Input start -->
         <div id="input">
             <div id="PvP_p1">
                 Player 1:<br>Input Number
-                <input type="number"> <!-- Equal to set area -->
+                <input type="number"> <!-- Equal to set range -->
             </div>
             <div id="PvP_p2">
                 Player 2:<br>Guess!
@@ -48,16 +49,14 @@
             </div>
             <div id="PvE">
                 Player:<br>Guess!
-                <input type="number"> <!-- Equal to set area -->
+                <input type="number"> <!-- Equal to set range -->
             </div>
 
         </div>        
         <!-- Input end -->
 
-        <hr>
-
         <!-- Return start -->
-        <div id="return">
+        <div id="output">
             <div id="hit">
                 You Won!<br>Tries:<br>
                 <button>Play Again</button>
@@ -72,6 +71,10 @@
             </div>
         </div>
         <!-- Return end -->
+
+        <br>
+        <button id="back">Back</button>
+        <button id="next">Next</button>
     </div>
 
     <script src="script.js"></script>
@@ -90,13 +93,18 @@
         4.1 letting counter run for length of array + 1 (because of 0 index), as long as not 0
         4.2 inserting array element into <ul> per execute
 
-    - <hr> temp. for "phases"
-    - Let Player1 give hints in area
+    - Let Player1 give hints in range
     - End -> show amoutn of tries it took (array length)
     - Try Again button OR press enter
+    - For each step show 1/2; 1/3; ... in corner
+    - Everything centered
+    - Default range: 10
+    - When press next -> Next settings move into view from left to middle and 'push' range/mode to the side into list (at right height) + header/winning screen drop from top
 
     Settings
     - Double input warnings option
+    - Negative Numbers <input type="number" min=""/min+"0"
+        - defaultUpdateResult(all); negativeUpdateResult; positiveUpdateResult
 
     Google Fonts/Icons
     - Tutorials:
@@ -104,6 +112,8 @@
 
     - Icons:
         - https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Aemoji_events%3AFILL%400%3Bwght%40400%3BGRAD%400%3Bopsz%4024
+        - Back
+        - Next
 -->
 
 
@@ -111,10 +121,4 @@
 <!--
     NEXT
     - Google Icons
-
-
-
-
-
-
 -->
