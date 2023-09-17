@@ -23,61 +23,75 @@
             </div>
             <div id="customRange">
                 Custom<br>
-                <input type="number" placeholder="start" step="1" id="rangeStart" oninput="updateResult()">
-                <input type="number" placeholder="end" step="1" id="rangeEnd" oninput="updateResult()">
+                <input type="number" placeholder="min" step="1" id="rangeMin" oninput="updateResult()">
+                -
+                <input type="number" placeholder="max" step="1" id="rangeMax" oninput="updateResult()">
             </div>
-            <div id="showRange">Range: undefined</div>
+            <div class="showRange">Range: undefined</div>
         </div>
         <!-- Set Range end -->
 
         <!-- Set Mode start -->
         <div id="setMode">
-            <button>PvP</button> <!-- PvP === true; -->
-            <button>PvE</button> <!-- PvE === true; -->
+            Select a Mode<br>
+            <button id="pvp">PvP</button> <!-- PvP === true; -->
+            <button id="pve">PvE</button> <!-- PvE === true; -->
         </div>
         <!-- Set Mode end -->
 
         <!-- Input start -->
         <div id="input">
-            <div id="PvP_p1">
-                Player 1:<br>Input Number
-                <input type="number"> <!-- Equal to set range -->
+            <div id="pvp_p1">
+                Player 1<br>Input Number<br>
+                <input type="number" placeholder="" min="" max="" id="p1_input"> <!-- Equal to set range -->
+                <button id="p1_confirm">✔</button>
             </div>
-            <div id="PvP_p2">
-                Player 2:<br>Guess!
-                <input type="number">
+            <div id="pvp_p2">
+                Player 2<br>Guess!
+                <input type="number" placeholder="" min="" max="" id="p2_input">
+                <button id="p2_confirm">✔</button>
             </div>
-            <div id="PvE">
-                Player:<br>Guess!
-                <input type="number"> <!-- Equal to set range -->
+            <div id="pve_p">
+                Player<br>Guess!
+                <input type="number" placeholder="" min="" max="" id="p_input"> <!-- Equal to set range -->
+                <button id="p_confirm">✔</button>
             </div>
 
         </div>        
         <!-- Input end -->
 
-        <!-- Return start -->
+        <!-- Output start -->
         <div id="output">
             <div id="hit">
-                You Won!<br>Tries:<br>
-                <button>Play Again</button>
+                You Won!<br>
+                <div id="hit_tries_display">Number of tries: 0</div>
+                <button id="playAgain">Play Again</button>
             </div>
-            <div id="too_low">
+            <div id="tooLow">
                 Too Low!<br>
-                <button>Try Again</button>
+                <div id="low_tries_display">Number of tries: 0</div>
+                <button id="low_tryAgain">Try Again</button>
             </div>
-            <div id="too_high">
+            <div id="tooHigh">
                 Too High!<br>
-                <button>Try Again</button>
+                <div id="high_tries_display">Number of tries: 0</div>
+                <button id="high_tryAgain">Try Again</button>
             </div>
         </div>
         <!-- Return end -->
+
+        <!-- Error Messages start
+        <div id="error1"></div>
+        <div id="error2"></div>
+        <div id="error3"></div>
+        Error Messages end -->
 
         <br>
         <button id="back">Back</button>
         <button id="next">Next</button>
     </div>
 
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     
 </body>
 </html>
@@ -86,7 +100,7 @@
 <!-- 
     Ideas
 
-    1. Define array for incorrect inputs
+    1. Define array for 'miss' inputs
     2. Add incorrect inputs from player to array
     3. Create html list with amount of <li> equal to length of array
     4. Display incorrect inputs by 
@@ -98,7 +112,12 @@
     - Try Again button OR press enter
     - For each step show 1/2; 1/3; ... in corner
     - Everything centered
+    - error and info messages
+    - How to play landing page
+    - Smart min/max setting
     - Default range: 10
+    - document with console.log()
+    - toggle functions instead of repeating display block/none
     - When press next -> Next settings move into view from left to middle and 'push' range/mode to the side into list (at right height) + header/winning screen drop from top
 
     Settings
@@ -106,7 +125,7 @@
     - Negative Numbers <input type="number" min=""/min+"0"
         - defaultUpdateResult(all); negativeUpdateResult; positiveUpdateResult
 
-    Google Fonts/Icons
+    Google Fonts/Icons/styles
     - Tutorials:
         - https://www.w3schools.com/icons/google_icons_intro.asp
 
@@ -114,11 +133,4 @@
         - https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Aemoji_events%3AFILL%400%3Bwght%40400%3BGRAD%400%3Bopsz%4024
         - Back
         - Next
--->
-
-
-
-<!--
-    NEXT
-    - Google Icons
 -->

@@ -1,29 +1,22 @@
-#header {
-    display: none;
-}
-
-#setRange {
-    display: none;
-}
-
-#setMode {
-    display: none;
-}
-
-#input {
-    display: none;
-}
-
-#output {
-    display: none;
-}
-
-#back {
-    display: none;
-}
-
+/* container */
+#header,
+#setRange,
+#setMode,
+#input,
+#output,
+#back,
 #next {
     display: none;
 }
 
-/*if all have same value group at end*/
+#p1_input,
+#p2_input,
+#p_input {
+    width: 150px; /* temp */
+}
+
+/*#error1,
+#error2,
+#error3 {
+    color: red;
+}*/
