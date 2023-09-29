@@ -5,8 +5,7 @@ const setRange = document.getElementById("setRange");
 const setMode = document.getElementById("setMode");
 const input = document.getElementById("input");
 const output = document.getElementById("output");
-const back = document.getElementById("back");
-const next = document.getElementById("next");
+const bottomNav = document.getElementById("bottomNav");
 /*const error1 = document.getElementById("error1");
 const error2 = document.getElementById("error2");
 const error3 = document.getElementById("error3");*/
@@ -33,7 +32,7 @@ const p2_confirm = document.getElementById("p2_confirm");
 const p_confirm = document.getElementById("p_confirm");
 // output
 const hit = document.getElementById("hit");
-const playAgain = document.getElementById('playAgain');
+const playAgain = document.getElementById("playAgain");
 const tooLow = document.getElementById("tooLow");
 const low_tryAgain = document.getElementById("low_tryAgain");
 const tooHigh = document.getElementById("tooHigh");
@@ -41,6 +40,10 @@ const high_tryAgain = document.getElementById("high_tryAgain");
 const hit_tries_display = document.getElementById("hit_tries_display");
 const low_tries_display = document.getElementById("low_tries_display");
 const high_tries_display = document.getElementById("high_tries_display");
+// bottomNav
+const back = document.getElementById("back");
+const numPage = document.getElementById("numPage");
+const next = document.getElementById("next");
 
 let min;
 let max;
@@ -51,10 +54,11 @@ let p_inputValue;
 let randomNumber;
 let tries = 0;
 
-// start / restart
+// start | restart
 start.onclick = function() {
     if (setRange.style.display === 'none' || setRange.style.display === '') {
         setRange.style.display = 'block';
+        
         next.style.display = 'block';
         back.style.display = 'none';
         setMode.style.display = 'none';
