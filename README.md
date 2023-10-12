@@ -1,2 +1,2 @@
-# imt-Zahl_Raten-repo
+# imt-Zahl_Raten
  IMT Zahl Raten Website with JS
