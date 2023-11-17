@@ -381,3 +381,6 @@ back.onclick = function() {
         next.style.display = 'block';
     }
 }
+
+// Mulitlingual features
+
