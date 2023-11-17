@@ -1,3 +1,19 @@
 {
-    "start": "Start"
+    "start": "Start",
+    "header": "Zahl Raten",
+    "suggestionsText": "Vorschläge",
+    "custom": "Benutzerdefiniert",
+    "back": "zurück",
+    "next": "weiter",
+    "setModeText": "Wähle einen Modus",
+    "player1": "Spieler 1",
+    "inputNum": "Gebe eine Nummer ein",
+    "player2": "Spieler 2",
+    "guess": "Rate!",
+    "player": "Spieler",
+    "youWon": "Du hast gewonnen!",
+    "tooLow": "Zu klein!",
+    "tooHigh": "Zu groß",
+    "playAgain": "Neustarten",
+    "low_tryAgain": "Versuche nochmal"
 }

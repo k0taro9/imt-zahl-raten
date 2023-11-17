@@ -1,3 +1,19 @@
 {
-    "start": "Start"
+    "start": "Start",
+    "header": "Guess the number",
+    "suggestionsText": "Suggestions",
+    "custom": "Custom",
+    "back": "back",
+    "next": "next",
+    "setModeText": "Select a Mode",
+    "player1": "Player 1",
+    "inputNum": "Input Number",
+    "player2": "Player 2",
+    "guess": "Guess!",
+    "player": "Player",
+    "youWon": "You Won!",
+    "tooLow": "Too Low!",
+    "tooHigh": "Too High!",
+    "playAgain": "Play Again",
+    "low_tryAgain": "Try Again"
 }

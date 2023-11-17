@@ -1,5 +1,5 @@
 /* container */
-#header,
+
 #setRange,
 #setMode,
 #input,
@@ -13,6 +13,20 @@
 #p2_input,
 #p_input {
     width: 150px; /* temp */
+}
+
+#suggestionsText,
+#custom,
+#setModeText,
+#player1,
+#inputNum,
+#player2,
+#guess,
+#player,
+#youWon,
+#tooLow,
+#tooHigh {
+    display: inline;
 }
 
 /*#error1,

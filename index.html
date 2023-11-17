@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +9,24 @@
 <body>
 
     <div class="container">
+
+        <h1 id="header"></h1>
+
         <!-- Start -->
         <button id="start"></button>
-        <h1 id="header">Header</h1>
 
         <!-- Set Range start -->
         <div id="setRange">
             <div id="suggestions">
-                Suggestions<br>
+                <p id="suggestionsText"></p>
+                <br>
                 <button id="ten">0-10</button>
                 <button id="hundred">0-100</button>
                 <button id="thousand">0-1000</button>
             </div>
             <div id="customRange">
-                Custom<br>
+                <p id="custom"></p>
+                <br>
                 <input type="number" placeholder="min" step="1" id="rangeMin" oninput="updateResult()">
                 -
                 <input type="number" placeholder="max" step="1" id="rangeMax" oninput="updateResult()">
@@ -33,7 +37,8 @@
 
         <!-- Set Mode start -->
         <div id="setMode">
-            Select a Mode<br>
+            <p id="setModeText"></p>
+            <br>
             <button id="pvp">PvP</button> <!-- PvP === true; -->
             <button id="pve">PvE</button> <!-- PvE === true; -->
         </div>
@@ -42,17 +47,24 @@
         <!-- Input start -->
         <div id="input">
             <div id="pvp_p1">
-                Player 1<br>Input Number<br>
+                <p id="player1"></p>
+                <br>
+                <p id="inputNum"></p>
+                <br>
                 <input type="number" placeholder="" min="" max="" id="p1_input"> <!-- Equal to set range -->
                 <button id="p1_confirm">✔</button>
             </div>
             <div id="pvp_p2">
-                Player 2<br>Guess!
+                <p id="player2"></p>
+                <br>
+                <p id="guess"></p>
                 <input type="number" placeholder="" min="" max="" id="p2_input">
                 <button id="p2_confirm">✔</button>
             </div>
             <div id="pve_p">
-                Player<br>Guess!
+                <p id="player"></p>
+                <br>
+                <p id="guess"></p>
                 <input type="number" placeholder="" min="" max="" id="p_input"> <!-- Equal to set range -->
                 <button id="p_confirm">✔</button>
             </div>
@@ -63,17 +75,20 @@
         <!-- Output start -->
         <div id="output">
             <div id="hit">
-                You Won!<br>
+                <p id="youWon"></p>
+                <br>
                 <div id="hit_tries_display">Number of tries: 0</div>
-                <button id="playAgain">Play Again</button>
+                <button id="playAgain"></button>
             </div>
             <div id="tooLow">
-                Too Low!<br>
+                <p id="tooLow"></p>
+                <br>
                 <div id="low_tries_display">Number of tries: 0</div>
-                <button id="low_tryAgain">Try Again</button>
+                <button id="low_tryAgain"></button>
             </div>
             <div id="tooHigh">
-                Too High!<br>
+                <p id="tooHigh"></p>
+                <br>
                 <div id="high_tries_display">Number of tries: 0</div>
                 <button id="high_tryAgain">Try Again</button>
             </div>
@@ -87,8 +102,8 @@
         Error Messages end -->
 
         <br>
-        <button id="back">Back</button>
-        <button id="next">Next</button>
+        <button id="back"></button>
+        <button id="next"></button>
     </div>
 
     <script defer src="translations.js"></script>
