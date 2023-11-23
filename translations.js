@@ -10,8 +10,8 @@ async function getTranslations(lang) {
 // Function to set language
 async function setLanguage(lang) {
     const translation = await getTranslations(lang);
-    document.getElementById('start').textContent = translation.start;
     document.getElementById('header').textContent = translation.header;
+    document.getElementById('start').textContent = translation.start;
     document.getElementById('suggestionsText').textContent = translation.suggestionsText;
     document.getElementById('custom').textContent = translation.custom;
     document.getElementById('back').textContent = translation.back;
